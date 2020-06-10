@@ -16,7 +16,7 @@ public class Solution {
 
         IntStream.range(0, 3).map(i -> scanner.nextInt()).forEach(a::add);
         IntStream.range(0, 3).map(i -> scanner.nextInt()).forEach(b::add);
-
+        scanner.close();
         int aScore = 0, bScore = 0;
         for (int i = 0; i < a.size() && i < b.size(); i++) {
             aScore += a.get(i) > b.get(i) ? 1 : 0;
